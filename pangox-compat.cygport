@@ -1,0 +1,15 @@
+inherit gnome2
+
+NAME="pangox-compat"
+VERSION=0.0.2
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="Deprecated PangoX library"
+DESCRIPTION="This is a compatibility library providing the obsolete pangox
+library that is not shipped by Pango itself anymore."
+
+PATCH_URI="0.0.2-no-undefined.patch"
+
+PKG_NAMES="libpangox1.0_0 libpangox1.0-devel"
+libpangox1_0_0_CONTENTS="etc/pango/ usr/bin/cygpangox-1.0-0.dll usr/share/"
+libpangox1_0_devel_CONTENTS="usr/include/ usr/lib/"

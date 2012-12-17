@@ -1,0 +1,11 @@
+--- origsrc/pangox-compat-0.0.2/Makefile.am	2012-08-27 18:28:34.000000000 -0500
++++ src/pangox-compat-0.0.2/Makefile.am	2012-12-16 20:23:38.884489800 -0600
+@@ -29,7 +29,7 @@ pkgconfig_DATA = pangox.pc
+ 
+ lib_LTLIBRARIES = libpangox-1.0.la
+ 
+-libpangox_1_0_la_LDFLAGS = -version-info 0:0:0 -export-symbols-regex "^pango_x_"
++libpangox_1_0_la_LDFLAGS = -version-info 0:0:0 -export-symbols-regex "^pango_x_" -no-undefined
+ libpangox_1_0_la_CPPFLAGS = 			\
+ 	-DG_LOG_DOMAIN=\"PangoX-Compat\"	\
+ 	-DPANGO_ENABLE_BACKEND			\
